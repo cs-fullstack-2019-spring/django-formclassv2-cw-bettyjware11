@@ -1,17 +1,11 @@
 {% extends 'EmployeeApplicationApp/index.html'  %}
 
 {% block content %}
-<table class="text" >
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-
-
-
-</table>
-
-
+<form method="POST">
+    {{ newform.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="Submit">
+</form>
 
 
 {% endblock %}
